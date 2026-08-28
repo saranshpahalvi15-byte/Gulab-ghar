@@ -1,0 +1,35 @@
+export const siteConfig = {
+  brand: {
+    name: 'Gulaab Ghar',
+    legalName: 'Gulaab Ghar Events & Wedding Planners',
+    subtitle: 'Event Decorators & Wedding Planners',
+    originCity: 'Jaipur, Rajasthan',
+    tagline: 'Where Your Celebration Becomes a Memory',
+    shortBio: 'Luxury wedding planning and bespoke event décor crafted from the heart of Jaipur, bringing Rajasthan’s royal hospitality and contemporary elegance to life.',
+    sinceNote: 'Crafting bespoke celebrations across Rajasthan & India',
+  },
+  contact: {
+    phone: '+91 97425 90703',
+    phoneFormatted: '+91 97425 90703',
+    whatsappNumber: '919742590703', // Pure digits with country code for wa.me
+    email: 'celebrations@gulaabghar.com',
+    alternateEmail: 'inquiries@gulaabghar.com',
+    address: 'Manwa Ji ka Bagh, 37, Moti Doongri Rd, Anand Puri, Fateh Tibba, Adarsh Nagar, Jaipur, Rajasthan 302004, India',
+    officeHours: 'Monday – Sunday: 10:00 AM – 8:00 PM IST',
+    googleMapsUrl: 'https://www.google.com/maps/place/Gulaab+Ghar,+Manwa+Ji+ka+Bagh,+37,+Moti+Doongri+Rd,+Anand+Puri,+Fateh+Tibba,+Adarsh+Nagar,+Jaipur,+Rajasthan+302004/data=!4m2!3m1!1s0x396db7a235ffe93f:0x6fe128cce8cee839',
+    googleMapsDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Gulaab+Ghar,+Manwa+Ji+ka+Bagh,+37,+Moti+Doongri+Rd,+Anand+Puri,+Fateh+Tibba,+Adarsh+Nagar,+Jaipur,+Rajasthan+302004',
+    googleMapsSearchUrl: 'https://www.google.com/maps/search/?api=1&query=Gulaab+Ghar,+Manwa+Ji+ka+Bagh,+37,+Moti+Doongri+Rd,+Anand+Puri,+Fateh+Tibba,+Adarsh+Nagar,+Jaipur,+Rajasthan+302004',
+    googleMapsEmbedUrl: 'https://maps.google.com/maps?q=Gulaab+Ghar,+Manwa+Ji+ka+Bagh,+37,+Moti+Doongri+Rd,+Anand+Puri,+Fateh+Tibba,+Adarsh+Nagar,+Jaipur,+Rajasthan+302004&t=&z=16&ie=UTF8&iwloc=&output=embed',
+    instagram: 'https://instagram.com/gulaabghar.jaipur',
+    instagramHandle: '@gulaabghar.jaipur',
+    pinterest: 'https://pinterest.com/gulaabghar',
+  },
+  serviceRegions: [
+    'Jaipur (Palaces, Heritage Havelis & Resorts)',
+    'Udaipur (Lake Palaces & Luxury Island Courtyards)',
+    'Jodhpur (Forts & Royal Sandstone Venues)',
+    'Pushkar & Jaisalmer (Desert Royal Sundowners)',
+    'Delhi NCR & Destination Locations Across India',
+  ],
+  defaultWhatsAppMessage: 'Hi Gulaab Ghar, I’m interested in planning an event in Jaipur/Rajasthan and would love to discuss my requirements with your team.',
+};
