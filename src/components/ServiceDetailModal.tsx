@@ -1,7 +1,8 @@
 import React from 'react';
-import { X, CheckCircle2, MessageCircle, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { X, CheckCircle2, MessageCircle, Sparkles, Phone, ShieldCheck } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { getServiceWhatsAppUrl } from '../utils/whatsapp';
+import { siteConfig } from '../config/siteConfig';
 
 interface ServiceDetailModalProps {
   service: ServiceItem | null;
@@ -102,20 +103,21 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             href={getServiceWhatsAppUrl(service.title, service.subtitle)}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-6 py-3 rounded-full border border-[#128C7E]/40 text-[#128C7E] hover:bg-[#128C7E]/10 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+            id="modal-whatsapp-inquiry-btn"
+            className="w-full sm:w-auto px-6 py-3 rounded-full border border-[#128C7E]/40 text-[#128C7E] hover:bg-[#128C7E]/10 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Chat on WhatsApp</span>
           </a>
 
           <a
-            href={getServiceWhatsAppUrl(service.title, service.subtitle)}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`tel:${siteConfig.contact.phone.replace(/\s+/g, '')}`}
+            id="modal-direct-phone-inquiry-btn"
             className="w-full sm:w-auto px-7 py-3 bg-[#2D2422] hover:bg-[#8E4146] text-[#FAF7F2] rounded-full text-xs font-semibold uppercase tracking-widest flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-md"
+            title={`Call directly: ${siteConfig.contact.phoneFormatted}`}
           >
+            <Phone className="w-4 h-4 text-[#C5A880]" />
             <span>Inquire Directly for {service.title}</span>
-            <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>
